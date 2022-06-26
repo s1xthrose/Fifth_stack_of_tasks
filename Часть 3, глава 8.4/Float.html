@@ -1,0 +1,115 @@
+<!-- 
+Задание 1:
+inline-block продолжают участвовать в потоке, float – нет.
+
+
+Я бы выбрал inline-block, так как при float:left, элементы могут вести себя хаотично, могут залезать на границы ближайших элементов, в случае, если LI будут разными по размеру.
+
+
+
+
+Задание 2:
+<style>
+    .icon {
+      width: 16px;
+      height: 16px;
+      float: left;
+    }
+
+    .open .icon {
+      cursor: pointer;
+      background: url(https://js.cx/sprite-tree/minus.gif);
+    }
+
+    .closed .icon {
+      cursor: pointer;
+      background: url(https://js.cx/sprite-tree/plus.gif);
+    }
+
+    .leaf .icon {
+      cursor: text;
+      background: url(https://js.cx/sprite-tree/article.gif);
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .text {
+      margin: 6px 0 6px 16px;
+    }
+  </style>
+
+Задание 3:
+
+<div class="nav">
+  <img src="arrow-left.jpg" class="left" width="40" height="40">
+  <img src="arrow-right.jpg" class="right" width="40" height="40">
+  <ul class="pages">
+    <li>...</li>
+  </ul>
+</div>
+
+.nav {
+  height: 40px;
+  width: 80%;
+  margin: auto;
+}
+
+.nav .left {
+  float: left;
+  cursor: pointer;
+}
+
+.nav .right {
+  float: right;
+  cursor: pointer;
+}
+
+.nav .pages {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav .pages li {
+  display: inline;
+  margin: 0 3px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+
+
+
+Задание 4:
+
+<style>
+  .left {
+    float:left;
+    width:30%;
+    background: #aef;
+  }
+
+  .right {
+    float:right;
+    width:70%;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    border-left: 2px solid green;
+    padding-left: 10px;
+
+    background: tan;
+  }
+</style>
+
+<div class="left">
+ Левая<br>Колонка
+</div>
+<div class="right">
+ Правая<br>Колонка<br>...
+</div>
+-->
